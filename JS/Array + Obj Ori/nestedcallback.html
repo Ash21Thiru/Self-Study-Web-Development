@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested callback</title>
+</head>
+
+<body>
+    <script>
+        function someThing(callback) {
+            console.log("Do Something!" + callback);
+        }
+
+        function someThingElse(callback) {
+            console.log("Do something Else!" + callback);
+            callback();
+        }
+        function doThirdThing(callback) {
+            console.log("Do Third thing!" + callback);
+            callback();
+        }
+
+        someThing(function () {
+            console.log("first anonymous callback");
+            someThingElse(function () {
+                console.log("SEcond anonymous callback!")
+                doThirdThing(function () {
+                    console.log("Third anonymous function")
+
+                })
+            })
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

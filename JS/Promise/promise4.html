@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+       //return promise
+       let countValue = new Promise(function (resolbe,reject){
+        reject('Promise rejected');
+       });
+
+       //executes wehn promise is reolved succesfull
+        countValue.then(
+            function successValue(result){
+                console.log(result);
+            },
+        )
+
+        //exectutes if there is an error
+        .catch(
+            function errorValue(result){
+                console.log(result);
+            }
+
+        );
+
+
+        
+    </script>
+</body>
+
+</html>

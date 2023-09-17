@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheratence</title>
+</head>
+<body>
+<script>
+//Parent Class
+class Shape {
+constructor(color){
+    this.color = color;
+}
+draw(){
+    concole.log("Drawing a shape.");
+}
+}
+
+//Child classes
+class Circle extends Shape {
+draw(){
+    concole.log(`Drawing a ${this.color} circle.`);
+}    
+}
+class Rectangle extends Shape {
+    draw(){
+        console.log(`Drawing a ${this.color} rectangle. `)
+    }
+}
+//Usage
+const myCircle = new Circle("red");
+const myRectangle = new Rectangle("blue");
+myCircle.draw(); //Output: "Drawing red curcke"
+myRectangle.draw(); //Output: "Drawing a blue rectangle"
+
+</script>
+
+
+</body>
+</html>

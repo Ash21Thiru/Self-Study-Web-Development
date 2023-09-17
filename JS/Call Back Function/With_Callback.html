@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let url = 'https://www.google/pic.jpg';
+
+function download(url,callback) {
+
+setTimeout(()=>{
+//script to download the picture here
+//using string templates
+console.log(`Downloading ${url} ...`)
+
+//processs the picture once its completed
+callback(url);
+
+},7000);
+}
+
+function process(picture) {
+    console.log(`Processing ${picture}`)
+}
+download(url,process);
+
+
+
+ </script>   
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const finial = [];
+
+digit = 156;
+let num = 1; 
+let num2 = 10;
+//finial[0] = Math.floor((digit % 10)/1);
+//finial[1] = Math.floor((digit%100)/10);
+//finial[2] = Math.floor((digit%1000)/100);
+document.write("The bacward order is ")
+for(let i = 0; i < digit.length;i++){
+    finial[i] = Math.floor((digit%num2)/num);
+
+num = num* 10;
+num2 =num2* 10;
+document.write(finial[i]);
+
+let number = 2891, reverse = 0;
+while(number != 0){
+
+console.log("Number " + number)
+let reminder = number % 10;
+console.log("Remainder"+remainder);
+reverse= reverse * 10 + reminder;
+number = Math.floor(number/10);
+console.log("Number after divide"+number);
+
+}
+document.wriite(reverse);
+
+
+}
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

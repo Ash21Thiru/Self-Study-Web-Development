@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+let total = 200;
+for(let i = 0; i < total; i++){
+    
+
+    if(i % 2 == 0 && i != 2)
+        document.write(i + " Not Prime"+"<br>");
+    else if((i % 3 == 0 && i != 3) || (i % 5 == 0 && i != 5)||(i % 7 == 0 && i != 7))
+        document.write(i + " Not Prime"+"<br>");
+    else
+        document.write(i + " Prime"+"<br>");    
+    
+
+}
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array + object oreinted</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+            {
+                name: "Marry",
+                score: 90,
+                school: "east"
+            },
+
+            {
+                name: "John",
+                score: 90,
+                school: "South"
+            },
+
+            {
+                name: "Sam",
+                score: 90,
+                school: "East"
+            },
+
+            {
+                name: "john",
+                score: 90,
+                school: "West"
+            },
+
+            {
+                name: "Lynette",
+                score: 95,
+                school: "East"
+            }
+        ];
+ let processStudents = function (data, callback){
+    for(let i = 0; i < data.length; i++){
+        if(data[i].school.toLowerCase()==="east"){
+            if(typeof callback === "function"){
+                console.log(data[i])
+                callback(data[i]);
+            }
+        }
+    }
+ }
+ 
+let determineTotal = function(){
+    let total = 0,
+    count = 0;
+
+    processStudents(students, function (obj){
+        total = total + obj.score;
+        count++;
+    });
+    console.log("Total score: "+total +"-Total Count :" + count);
+}
+determineTotal();
+
+    </script>
+</body>
+
+</html>

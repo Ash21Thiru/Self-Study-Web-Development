@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+
+<h2 class = "header">A heading with  the class example in div</h2>
+<p class = "example">A paragraph with class = exmaple</p>
+<p class = "example">also a paragraph with class = example in divv</p>
+
+<p>click the button to change the text of the first p eleemnt withe class = exaple in div</p>
+<button onclick="myFunction()">Try It</button>
+
+
+
+</div>
+<script>
+function myFunction(){
+    let paragraph = document.getElementsByClassName("example");
+    concole.log(paragraph[0].textContent);
+    concole.log(paragraph[1].textContent);
+
+}
+    
+    
+</script>
+
+</body>
+</html>

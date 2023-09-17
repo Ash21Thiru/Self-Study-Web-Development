@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js objects + array</title>
+</head>
+
+<body>
+    <script>
+let cars = [
+{
+color: "purple",
+type: "mimivan",
+registration: new Date("2022-05-20"),
+capacity:7
+},
+{
+color:"red",
+type:"station wagon",
+registration: new Date("2021-03-03"),
+capacity:5
+}
+]
+
+let slength = cars.length;
+for(let i=0; i <slength;i++){
+document.write(cars[i].type + "<br>");
+document.write(cars[i].color + "<br>");
+document.write(cars[i].registration + "<br>");
+document.write(cars[i].capacity + "<br>");
+document.write("<br>");
+}
+
+
+
+    </script>
+</body>
+
+</html>

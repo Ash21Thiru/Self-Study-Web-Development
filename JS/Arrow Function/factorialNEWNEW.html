@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fucntion TEST</title>
+</head>
+<body>
+<script>
+//inilization
+let Fac = 1;
+//function
+let factorial = (x) => {
+
+let Fac = x;
+for(let i = 1; i < (x); i++){
+Fac = Fac*i;
+}
+return Fac;
+}
+
+//Taking number of factorial
+let x = prompt("Enter a number: ");
+//Calling Function
+document.write(factorial(x));
+
+//OTHER WAY
+/*
+var fact = 1;
+var i;
+for(i=5;i>=1; i--){
+fact = fact*i;
+
+}
+document.writ(
+"Factorial is" + fact
+)
+*/
+
+
+</script>    
+
+
+
+</body>
+</html>

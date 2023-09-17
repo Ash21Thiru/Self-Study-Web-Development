@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecter</title>
+</head>
+<style>
+
+/*Applies to all H1*/
+h1{
+    color: red;
+}
+/*Applies to all H1 with this class*/
+.life{
+color: black;
+}
+/*Applies to one H1 tag and no other*/
+#long{
+    color: turquoise;
+}
+/*Applies to all p tags with this class*/
+p.HAH{
+    color: blueviolet;
+}
+/*This is overwritten with those with clases or ID*/
+p{
+    color: bisque;
+}
+
+
+
+
+</style>
+
+
+
+<body>
+<h1>HI</h1>
+<h1 class = 'life'>HI</h1>
+<h1 id = 'Long'>HI</h1>
+<p class = 'HAH'>HIIIIï</p>
+<p>BYe</p>
+</body>
+</html>

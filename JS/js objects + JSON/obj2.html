@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js objects</title>
+</head>
+
+<body>
+    <h2>Parsing a JSON array</h2>
+    <p>Data written as an JSON array will be parsed into a JS array</p>
+    <p id="demo"></p>
+
+    <script>
+const text = '["Ford","BMW","Audi","Diat"]';
+const myArr = JSON.parse(text);
+document.getElementById("demo").innerHTML = myArr[0];
+    </script>
+</body>
+
+</html>

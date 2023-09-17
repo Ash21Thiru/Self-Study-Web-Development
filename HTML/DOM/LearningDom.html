@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Learning Dom</h1>
+<div>
+<p id = "greeting">Lorem ipsum dolor sit amet</p>
+<input type = "button" onclick = "display()" value = "click"> 
+<input type = "button" onclick = "back()" value = "back"> 
+
+</div>
+
+<script>
+function display(){
+    document.getElementById("greeting").innerHTML = "Hello how are you?"
+}
+
+function back(){
+    document.getElementById("greeting").innerHTML = "Lorem ispum dolor sit amet"
+}
+
+
+</script>
+
+
+
+
+    
+</body>
+</html>

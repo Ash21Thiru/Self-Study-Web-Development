@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array + object oreinted</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+            {
+                name: "Marry",
+                score: 90,
+                school: "east"
+            },
+
+            {
+                name: "John",
+                score: 90,
+                school: "South"
+            },
+
+            {
+                name: "Sam",
+                score: 90,
+                school: "East"
+            }
+        ];
+
+        for (let i = 0; i < 3; i++) {
+            docuemnt.write("<br> <br> <hr>");
+            document.write("<br>" + students[i].name);
+            document.write("<br>" + students[i].score);
+            document.write("<br>" + students[i].school);
+        }
+
+        console.table(students);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>febonic</title>
+</head>
+<body>
+ <script>
+//initlization
+document.write("1" + "<br>")
+let num1 = 0;
+let num2 = 1;
+//Arrow Function
+let Febonic = (x)=>{
+for(let i = 0; i<x;i++){
+num3 = num1+num2;
+document.write(num3 + "<br>");
+num1 = num2;
+num2 = num3;
+num3 = 0;
+}
+}
+//Input
+let num = prompt("Enter a number: ");
+//Call function
+Febonic(num)
+
+ </script>   
+</body>
+</html>
