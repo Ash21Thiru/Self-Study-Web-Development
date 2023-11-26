@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM getElEMENTID Class</title>
+</head>
+<body>
+<h2>JS HTML DOM</h2>
+
+<p>Finding HTML Elements by CLass Name.</p>
+<p class="intro">Hellow World!</p>
+<p class="intro">This example demonstrates the <b>getElementByClassname</b> method</p>
+
+<p id = "demo"></p>
+<script>
+const x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = "the first paragrprha index(0) with class='intro' is: " + x[0].innerHTML;
+
+for(let i = 0; i < x.length;i++){
+        document.write(x[i].innerHTML + "<br>");
+    }
+
+    document.getElementById("demo").innerHTML = 'the text in first paragprah index 0 is '+ x[0].innerHTML;
+
+
+
+
+</script>
+</body>
+</html>

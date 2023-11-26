@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myTextBox">
+<script>
+   //JS code
+   const textBox = document.getElementById("myTextBox");
+
+   let myPromise  = new Promsie((resolve,reject)=>{
+    for(let i = 0; i<=10;i++){
+        setTimeout(function timer(){
+            textBox.value=i;
+        }, i * 1000);
+    }
+    resolve("completed!");
+   });
+
+myPromise.then((result)=>{
+    console.log(result);
+}).catch((error)=>{
+    console.error(error);
+});
+</script>
+
+
+</body>
+</html>

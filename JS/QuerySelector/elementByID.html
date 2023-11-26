@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer Selector by CLASS</title>
+<style>
+    #id{
+    text-align: center;
+    font-size: 18px;
+    color:brown;
+    }
+</style>
+
+
+
+</head>
+<body>
+   <div class="container">
+        <h1 id = "title">Selecting elements by ID</h1>
+        <p>Some text goes here...</p>
+        <ul>
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+        </ul>
+</div>
+    <script>
+        const title = document.querySelector("#title");
+        console.log(title);
+        console.log(title.textContent);
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+<style>
+    .hidden{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }
+</style>
+<script>
+    function showLocationFeild(){
+        var online = document.getElementById('online');
+        var showLocationFeild = document.getElementById('location-feild');
+
+        if(online.checked){
+            locationFeild.classList.remove('visible');
+            locationFeild.classList.add('hidden')
+        }
+        else{
+            locationFeild.classList.remove('hidden');
+            locationFeild.classList.add('visible')
+        }
+    }
+</script>
+
+</head>
+<body>
+    <form action="/submit_form" method = "post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="telephone">Telephone:</label><br>
+        <input type="tel" id="telephone" name="telephone"><br><br>
+
+        <p>Learning Type:</p>
+        <input type="radio" id="online" name="learning_type" value="online" onclick="showLocationFeild()">
+        <label for="online">Online</label><br>
+        <input type="radio" id="in-person" name="learning_type" value="in-person" onclick="showLocationFeild()">
+        <label for="in-person">In-Person</label><br><br>
+
+        <div id="location-feild" class="hidden">
+            <label for="locationFeild">Location:</label>
+            <select id="location" name="location">
+                <option value="Toronto">Toronto</option>
+                <option value="Scarbrough">Scarbrough</option>
+                <option value="Ajax">Ajax</option>
+    
+            </select><br><br>
+        </div>
+<input type="submit" value="Submit">
+
+    </form>
+
+
+
+
+</body>
+</html>

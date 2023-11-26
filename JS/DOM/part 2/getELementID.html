@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElEMENTID</title>
+</head>
+<body>
+    <h1>Learningg DOM</h1>
+    <div>
+        <p id="greeting">I DO NOT UNDERSTAND THAT QUESTION</p>
+        <input type="button" onclick="myclick()" value="click">
+        <input type="button" onclick="back()" value="back">
+    </div>
+
+    <script>
+        function myclick(){
+            document.getElementById("greeting").innerHTML = "<div class='myclass'> Hellow how are you? <div>"
+        }
+
+
+        function back(){
+            document.getElementById("greeting").innerHTML = "<div class='myclass'> HOW LIFE <div>"
+        }
+    </script>
+
+
+
+</body>
+</html>

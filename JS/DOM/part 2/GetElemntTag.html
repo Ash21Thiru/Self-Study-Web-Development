@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM getElEMENTID TAG</title>
+</head>
+<body>
+<h2>JS HTML DOM</h2>
+
+<p>Finding HTML Elements by Tag Name</p>
+<p>This example, demonstrates the <b>getElementByTagName</b> method.</p>
+
+
+<p id="demo"></p>
+
+<script>
+ //we can use the getElementsByTagName to get all the tags on the page
+ const element = document.getElementsByTagName("p");
+    console.log(element);
+
+    for(let i = 0; i < element.length;i++){
+        document.write(element[i].innerHTML + "<br>");
+    }
+
+    document.getElementById("demo").innerHTML = 'the text in first paragprah index 0 is '+ element[0].innerHTML;
+
+</script>
+</body>
+</html>
